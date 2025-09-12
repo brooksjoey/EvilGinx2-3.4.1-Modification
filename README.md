@@ -1,5 +1,3 @@
-# EvilGinx2-3.4.1-Modification
-```markdown
 # EvilGinx2-3.4.1-Modification 🚀
 
 **Advanced Phishing Campaign Management System with Automated Telegram Integration**
