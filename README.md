@@ -194,20 +194,6 @@ watch -n 5 'tail -n 10 var/log/evilginx/captures/credentials.log'
 
 ---
 
-## 🚨 Legal Disclaimer
-
-**⚠️ IMPORTANT: FOR EDUCATIONAL AND AUTHORIZED TESTING ONLY**
-
-This tool is designed for:
-- Security research and education
-- Authorized penetration testing  
-- Corporate security training
-- Defensive security preparation
-
-**You must have explicit written permission** before testing any systems you don't own. The developers assume no liability for misuse.
-
----
-
 ## 📞 Support
 
 ### Quick Help
@@ -222,9 +208,7 @@ This tool is designed for:
 
 ---
 
-## 🎉 Congratulations!
-
-Your advanced phishing campaign system is now ready! The system will:
+The system will:
 
 - ✅ Automatically monitor for credentials 24/7
 - ✅ Send instant Telegram alerts  
